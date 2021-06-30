@@ -1,10 +1,7 @@
+import { Route } from "react-router-dom";
 import "./styles.css";
+import Routing from "./Routing/routes";
 
 export default function App() {
-  return (
-    <div className="app">
-      <h1>Hello CodeSandboxs</h1>
-      <h2>Edit to see some magic happen!</h2>
-    </div>
-  );
+  return <Routing />;
 }
