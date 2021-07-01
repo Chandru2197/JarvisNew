@@ -18,6 +18,28 @@ export default class Routes extends Component {
             </React.Fragment>
           )}
         />
+        <Route
+          exact
+          path={"/1"}
+          render={(props) => (
+            <React.Fragment>
+              <div className="app-body">
+                <Home {...props} />
+              </div>
+            </React.Fragment>
+          )}
+        />
+        <Route
+          exact
+          path={"/2"}
+          render={(props) => (
+            <React.Fragment>
+              <div className="app-body">
+                <Home {...props} />
+              </div>
+            </React.Fragment>
+          )}
+        />
       </Router>
     );
   }
