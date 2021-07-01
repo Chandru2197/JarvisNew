@@ -1,9 +1,16 @@
 import React, { Component } from "react";
+import SingleSelect from "../components/SingleSelect";
+import MultipleSelect from "../components/MultipleSelect";
 
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      options: [
+        { label: "Jarvis", value: 1 },
+        { label: "Jarvis V2", value: 2 }
+      ]
+    };
   }
   render() {
     return (
@@ -46,6 +53,9 @@ class Home extends Component {
             <a href="#" class="card-link">
               Another link
             </a>
+            <SingleSelect options={this.state.options} />
+            <br />
+            <MultipleSelect options={this.state.options} />
           </div>
         </div>
       </div>
