@@ -232,10 +232,10 @@ class Home extends Component {
     };
   }
   column = [
-    {
-      Header: "SI.No",
-      accessor: "id"
-    },
+    // {
+    //   Header: "SI.No",
+    //   accessor: "id"
+    // },
     {
       Header: "Name",
       accessor: "name"
@@ -312,6 +312,7 @@ class Home extends Component {
             <br />
           </div>
         </div>
+        <br />
         <DataTable data={this.state.data} columnHeading={this.column} />
       </div>
     );
