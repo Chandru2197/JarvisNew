@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import SingleSelect from "../components/SingleSelect";
 import MultipleSelect from "../components/MultipleSelect";
 import DataTable from "../components/DataTable";
+
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -301,13 +302,17 @@ class Home extends Component {
             <a href="#" class="card-link">
               Another link
             </a>
+            <br />
+            <div>Single Select</div>
             <SingleSelect options={this.state.options} />
             <br />
+            <div>Multi Select</div>
+
             <MultipleSelect options={this.state.options} />
             <br />
-            <DataTable data={this.state.data} columnHeading={this.column} />
           </div>
         </div>
+        <DataTable data={this.state.data} columnHeading={this.column} />
       </div>
     );
   }
