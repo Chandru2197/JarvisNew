@@ -1,6 +1,6 @@
 import React from "react";
-import ReactTable from "react-table";
-// import "react-table/react-table.css";
+import ReactTable from "react-table-6";
+import "react-table-v6/react-table.css";
 
 const Datatable = ({ data, columnHeading, filterable = true }) => {
   return (
