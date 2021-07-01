@@ -6,7 +6,13 @@ class Home extends Component {
     this.state = {};
   }
   render() {
-    return <div>CHAN</div>;
+    return (
+      <div>
+        <div className="alert alert-primary" role="alert">
+          This is a primary alert—check it out!
+        </div>
+      </div>
+    );
   }
 }
 
